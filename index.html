@@ -13,25 +13,32 @@
 <body>
   <h1 id="h1">Math Test</h1>
   <hr>
-  <div id="question1">
-    <p>1. What is 5 + 6 ?</p>
-    <select name="q1" id="q1">
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-    </select>
-    <button id="q1Button">Submit answer</button>
-  </div>
-  <div id="question2" class="hidden">
-    <p>2. What is 14 - 10</p>
-    <select name="q2" id="q2">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-    <button id="q2Button">Submit answer</button>
+  <div id="centerText">
+    <div id="question1">
+      <p>1. What is 5 + 6 ?</p>
+      <select name="q1" id="q1">
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+      </select>
+      <button id="q1Button">Submit answer</button>
+    </div>
+    <div id="question2" class="hidden">
+      <p>2. What is 14 + 10 ?</p>
+      <select name="q2" id="q2">
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+      </select>
+      <button id="q2Button">Submit answer</button>
+    </div>
+    <div id="question3">
+      <p>3. What is <span id="q3FirstValue"></span> + <span id="q3SecondValue"></span> ?</p>
+      <input type="text" id="q3Answer">
+      <button id="q3Button">Submit answer</button>
+    </div>
   </div>
 </body>
 </html>
