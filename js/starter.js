@@ -9,7 +9,7 @@ $(document).ready(function(){
       $("#question2").addClass('animated').addClass('zoomIn');
       $("#q1Button").attr("disabled","disabled")
     } else {
-      let wrongAnswer = $("<p>").text('no, dummy');
+      let wrongAnswer = $("<p>").text('incorrect');
       $("#q1Button").append(wrongAnswer);
       $("#q1Button").attr("disabled","disabled")
     };
