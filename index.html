@@ -8,16 +8,29 @@
   <script type='text/javascript' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
   <script type='text/javascript' src='js/starter.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-  <h1>Math Test</h1>
-  <p>What is 5 + 6 ?</p>
-  <select name="q1" id="q1">
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-  </select>
-  <button id="q1Button">Submit answer</button>
+  <h1 id="h1">Math Test</h1>
+  <div id="question1">
+    <p>1. What is 5 + 6 ?</p>
+    <select name="q1" id="q1">
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+    </select>
+    <button id="q1Button">Submit answer</button>
+  </div>
+  <div id="question2" class="hidden">
+    <p>2. What is 14 - 10</p>
+    <select name="q2" id="q2">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <button id="q2Button">Submit answer</button>
+  </div>
 </body>
 </html>
