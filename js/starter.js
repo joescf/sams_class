@@ -7,9 +7,11 @@ $(document).ready(function(){
       $("#q1Button").append(correctAnswer);
       $("#question2").removeClass('hidden');
       $("#question2").addClass('animated').addClass('zoomIn');
+      $("#q1Button").attr("disabled","disabled")
     } else {
       let wrongAnswer = $("<p>").text('no, dummy');
       $("#q1Button").append(wrongAnswer);
+      $("#q1Button").attr("disabled","disabled")
     };
 
   }
