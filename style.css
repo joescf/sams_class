@@ -6,4 +6,9 @@
   top: -38px;
   left: 134px;
 }
-
+#result {
+  position: relative;
+  top: -378px;
+  left: 550px;
+  font-size: 30px;
+}

@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // global variables
-
+  let score = 0;
   let randNumb = Math.floor(Math.random() * 100);
   let randNumb1 = Math.floor(Math.random() * 100);
   let randNumb2 = Math.floor(Math.random() * 100);
@@ -35,7 +35,7 @@ $(document).ready(function(){
     } else {
       let wrongAnswer = $("<p>").text('incorrect');
       $("#q1Button").append(wrongAnswer);
-      $("#q1Button").attr("disabled","disabled")
+      $("#q1Button").attr("disabled","disabled");
     };
   };
 
@@ -43,21 +43,73 @@ $(document).ready(function(){
     if ($("#q2").val() === "24") {
       $("#q2Button").append(correctAnswer);
     }
-  }
+  };
 
   let q3Button = function() {
     let answer = parseInt($("#q3Answer").val());
     if (answer === randNumb1 + randNumb2) {
       $("#q3Button").append(correctAnswer);
     }
+  };
+
+  let evalTest = function() {
+    let answer3 = parseInt($("#q3Answer").val());
+    let answer4 = parseInt($("#q4Answer").val());
+    let answer5 = parseInt($("#q5Answer").val());
+    let answer6 = parseInt($("#q6Answer").val());
+    let answer7 = parseInt($("#q7Answer").val());
+    let answer8 = parseInt($("#q8Answer").val());
+    let answer9 = parseInt($("#q9Answer").val());
+    let answer10 = parseInt($("#q10Answer").val());
+
+    if ($("#q1").val() === "11") {
+      score++;
+    };
+
+    if ($("#q2").val() === "24") {
+      score++;
+    }
+
+    if (answer3 === randNumb1 + randNumb2) {
+      score++;
+      console.log(score);
+    };
+    if (answer4 === randNumb3 + randNumb4) {
+      score++;
+      console.log(score);
+    };
+    if (answer5 === randNumb5 + randNumb6) {
+      score++;
+      console.log(score);
+    };
+    if (answer6 === randNumb7 + randNumb8) {
+      score++;
+      console.log(score);
+    };
+    if (answer7 === randNumb9 + randNumb10) {
+      score++;
+      console.log(score);
+    };
+    if (answer8 === randNumb11 + randNumb12) {
+      score++;
+      console.log(score);
+    };
+    if (answer9 === randNumb13 + randNumb14) {
+      score++;
+      console.log(score);
+    };
+    if (answer10 === randNumb15 + randNumb16) {
+      score++;
+      console.log(score);
+    };
+    let result = $("<p id=result>").text("you scored " + score + " out of 10!!");
+    $("body").append(result);
+    $("#submitBTNAddition").attr("disabled","disabled");
   }
 
 // code
-
-    console.log(randNumb1 + randNumb2)
   $("#q3FirstValue").text(randNumb1);
   $("#q3SecondValue").text(randNumb2);
-
   $("#q4FirstValue").text(randNumb3);
   $("#q4SecondValue").text(randNumb4);
   $("#q5FirstValue").text(randNumb5);
@@ -73,8 +125,27 @@ $(document).ready(function(){
   $("#q10FirstValue").text(randNumb15);
   $("#q10SecondValue").text(randNumb16);
 
+  // $("#q1Button").click(q1Button);
+  // $("#q2Button").click(q2Button);
+  // $("#q3Button").click(q3Button);
 
-  $("#q1Button").click(q1Button);
-  $("#q2Button").click(q2Button);
-  $("#q3Button").click(q3Button);
+  $("#submitBTNAddition").click(evalTest);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
